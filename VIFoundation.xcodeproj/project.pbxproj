@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FDD4341963B9DD3EC419944 /* Pods_VIFoundationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686C033E3BEECB82C9DD88E1 /* Pods_VIFoundationUITests.framework */; };
+		9B232C08684D11BFFA98D931 /* Pods_VIFoundationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E854A1B31D88CFBE78C24F /* Pods_VIFoundationTests.framework */; };
+		AF3221F41CE8C31F0020501C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3221F31CE8C31E0020501C /* AppDelegate.swift */; };
+		AF3221F61CE8C31F0020501C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3221F51CE8C31F0020501C /* ViewController.swift */; };
+		AF3221F91CE8C31F0020501C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3221F71CE8C31F0020501C /* Main.storyboard */; };
+		AF3221FC1CE8C31F0020501C /* VIFoundation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF3221FA1CE8C31F0020501C /* VIFoundation.xcdatamodeld */; };
+		AF3221FE1CE8C31F0020501C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3221FD1CE8C31F0020501C /* Assets.xcassets */; };
+		AF3222011CE8C31F0020501C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3221FF1CE8C31F0020501C /* LaunchScreen.storyboard */; };
+		AF32220C1CE8C3200020501C /* VIFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32220B1CE8C3200020501C /* VIFoundationTests.swift */; };
+		AF3222171CE8C3200020501C /* VIFoundationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3222161CE8C3200020501C /* VIFoundationUITests.swift */; };
+		F7BCC0E94FD3C9DA2C0CC152 /* Pods_VIFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AB46ECDC86FE14C03AF949 /* Pods_VIFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF3222081CE8C3200020501C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF3221E81CE8C31E0020501C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF3221EF1CE8C31E0020501C;
+			remoteInfo = VIFoundation;
+		};
+		AF3222131CE8C3200020501C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF3221E81CE8C31E0020501C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF3221EF1CE8C31E0020501C;
+			remoteInfo = VIFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DD0BDCA487B94E300750B4F /* Pods-VIFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIFoundation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIFoundation/Pods-VIFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		5F1D1C0A0A398D06844D4655 /* Pods-VIFoundationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIFoundationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIFoundationUITests/Pods-VIFoundationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		60AB46ECDC86FE14C03AF949 /* Pods_VIFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		686C033E3BEECB82C9DD88E1 /* Pods_VIFoundationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIFoundationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7E46F88C4600FE498F8E4C /* Pods-VIFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIFoundation.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIFoundation/Pods-VIFoundation.release.xcconfig"; sourceTree = "<group>"; };
+		8416582DCE9CDE5CD5AB427A /* Pods-VIFoundationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIFoundationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIFoundationTests/Pods-VIFoundationTests.release.xcconfig"; sourceTree = "<group>"; };
+		845A4527F7431D7AFECDE01D /* Pods-VIFoundationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIFoundationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIFoundationTests/Pods-VIFoundationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4861BBFFC098DF25887718 /* Pods-VIFoundationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIFoundationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIFoundationUITests/Pods-VIFoundationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3221F01CE8C31E0020501C /* VIFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3221F31CE8C31E0020501C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF3221F51CE8C31F0020501C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF3221F81CE8C31F0020501C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF3221FB1CE8C31F0020501C /* VIFoundation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIFoundation.xcdatamodel; sourceTree = "<group>"; };
+		AF3221FD1CE8C31F0020501C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF3222001CE8C31F0020501C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF3222021CE8C31F0020501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3222071CE8C3200020501C /* VIFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF32220B1CE8C3200020501C /* VIFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIFoundationTests.swift; sourceTree = "<group>"; };
+		AF32220D1CE8C3200020501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3222121CE8C3200020501C /* VIFoundationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIFoundationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3222161CE8C3200020501C /* VIFoundationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIFoundationUITests.swift; sourceTree = "<group>"; };
+		AF3222181CE8C3200020501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF3222241CE8C94E0020501C /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = "<group>"; };
+		AF3222251CE8C94E0020501C /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
+		C2E854A1B31D88CFBE78C24F /* Pods_VIFoundationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIFoundationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF3221ED1CE8C31E0020501C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7BCC0E94FD3C9DA2C0CC152 /* Pods_VIFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3222041CE8C3200020501C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B232C08684D11BFFA98D931 /* Pods_VIFoundationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF32220F1CE8C3200020501C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDD4341963B9DD3EC419944 /* Pods_VIFoundationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ED607557B57B160C223A2C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DD0BDCA487B94E300750B4F /* Pods-VIFoundation.debug.xcconfig */,
+				7F7E46F88C4600FE498F8E4C /* Pods-VIFoundation.release.xcconfig */,
+				845A4527F7431D7AFECDE01D /* Pods-VIFoundationTests.debug.xcconfig */,
+				8416582DCE9CDE5CD5AB427A /* Pods-VIFoundationTests.release.xcconfig */,
+				9E4861BBFFC098DF25887718 /* Pods-VIFoundationUITests.debug.xcconfig */,
+				5F1D1C0A0A398D06844D4655 /* Pods-VIFoundationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		395D545B77A34F717FA9652F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60AB46ECDC86FE14C03AF949 /* Pods_VIFoundation.framework */,
+				C2E854A1B31D88CFBE78C24F /* Pods_VIFoundationTests.framework */,
+				686C033E3BEECB82C9DD88E1 /* Pods_VIFoundationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF3221E71CE8C31E0020501C = {
+			isa = PBXGroup;
+			children = (
+				AF3221F21CE8C31E0020501C /* VIFoundation */,
+				AF32220A1CE8C3200020501C /* VIFoundationTests */,
+				AF3222151CE8C3200020501C /* VIFoundationUITests */,
+				AF3221F11CE8C31E0020501C /* Products */,
+				2ED607557B57B160C223A2C8 /* Pods */,
+				395D545B77A34F717FA9652F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF3221F11CE8C31E0020501C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF3221F01CE8C31E0020501C /* VIFoundation.app */,
+				AF3222071CE8C3200020501C /* VIFoundationTests.xctest */,
+				AF3222121CE8C3200020501C /* VIFoundationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF3221F21CE8C31E0020501C /* VIFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				AF3222241CE8C94E0020501C /* CocoaLumberjack.framework */,
+				AF3222251CE8C94E0020501C /* PubNub.framework */,
+				AF3221F31CE8C31E0020501C /* AppDelegate.swift */,
+				AF3221F51CE8C31F0020501C /* ViewController.swift */,
+				AF3221F71CE8C31F0020501C /* Main.storyboard */,
+				AF3221FD1CE8C31F0020501C /* Assets.xcassets */,
+				AF3221FF1CE8C31F0020501C /* LaunchScreen.storyboard */,
+				AF3222021CE8C31F0020501C /* Info.plist */,
+				AF3221FA1CE8C31F0020501C /* VIFoundation.xcdatamodeld */,
+			);
+			path = VIFoundation;
+			sourceTree = "<group>";
+		};
+		AF32220A1CE8C3200020501C /* VIFoundationTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF32220B1CE8C3200020501C /* VIFoundationTests.swift */,
+				AF32220D1CE8C3200020501C /* Info.plist */,
+			);
+			path = VIFoundationTests;
+			sourceTree = "<group>";
+		};
+		AF3222151CE8C3200020501C /* VIFoundationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF3222161CE8C3200020501C /* VIFoundationUITests.swift */,
+				AF3222181CE8C3200020501C /* Info.plist */,
+			);
+			path = VIFoundationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF3221EF1CE8C31E0020501C /* VIFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF32221B1CE8C3200020501C /* Build configuration list for PBXNativeTarget "VIFoundation" */;
+			buildPhases = (
+				384690A4501C2C055335507A /* 📦 Check Pods Manifest.lock */,
+				AF3221EC1CE8C31E0020501C /* Sources */,
+				AF3221ED1CE8C31E0020501C /* Frameworks */,
+				AF3221EE1CE8C31E0020501C /* Resources */,
+				913CA7B971B4F144676606A5 /* 📦 Embed Pods Frameworks */,
+				BDE25A90F9CCFE52EB4FD66D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIFoundation;
+			productName = VIFoundation;
+			productReference = AF3221F01CE8C31E0020501C /* VIFoundation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF3222061CE8C3200020501C /* VIFoundationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF32221E1CE8C3200020501C /* Build configuration list for PBXNativeTarget "VIFoundationTests" */;
+			buildPhases = (
+				6AA5F5B87A58973331122B47 /* 📦 Check Pods Manifest.lock */,
+				AF3222031CE8C3200020501C /* Sources */,
+				AF3222041CE8C3200020501C /* Frameworks */,
+				AF3222051CE8C3200020501C /* Resources */,
+				B55675F8DA73AEAAFACD2C1B /* 📦 Embed Pods Frameworks */,
+				4E5D2D6C0122ADBA9CB28B33 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF3222091CE8C3200020501C /* PBXTargetDependency */,
+			);
+			name = VIFoundationTests;
+			productName = VIFoundationTests;
+			productReference = AF3222071CE8C3200020501C /* VIFoundationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF3222111CE8C3200020501C /* VIFoundationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF3222211CE8C3200020501C /* Build configuration list for PBXNativeTarget "VIFoundationUITests" */;
+			buildPhases = (
+				4B675C6AA9249CA8313406FE /* 📦 Check Pods Manifest.lock */,
+				AF32220E1CE8C3200020501C /* Sources */,
+				AF32220F1CE8C3200020501C /* Frameworks */,
+				AF3222101CE8C3200020501C /* Resources */,
+				011CFDEC5A65FEB1FC6BFA52 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF3222141CE8C3200020501C /* PBXTargetDependency */,
+			);
+			name = VIFoundationUITests;
+			productName = VIFoundationUITests;
+			productReference = AF3222121CE8C3200020501C /* VIFoundationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF3221E81CE8C31E0020501C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = vyrox;
+				TargetAttributes = {
+					AF3221EF1CE8C31E0020501C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AF3222061CE8C3200020501C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AF3221EF1CE8C31E0020501C;
+					};
+					AF3222111CE8C3200020501C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AF3221EF1CE8C31E0020501C;
+					};
+				};
+			};
+			buildConfigurationList = AF3221EB1CE8C31E0020501C /* Build configuration list for PBXProject "VIFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF3221E71CE8C31E0020501C;
+			productRefGroup = AF3221F11CE8C31E0020501C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF3221EF1CE8C31E0020501C /* VIFoundation */,
+				AF3222061CE8C3200020501C /* VIFoundationTests */,
+				AF3222111CE8C3200020501C /* VIFoundationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF3221EE1CE8C31E0020501C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3222011CE8C31F0020501C /* LaunchScreen.storyboard in Resources */,
+				AF3221FE1CE8C31F0020501C /* Assets.xcassets in Resources */,
+				AF3221F91CE8C31F0020501C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3222051CE8C3200020501C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3222101CE8C3200020501C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		011CFDEC5A65FEB1FC6BFA52 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIFoundationUITests/Pods-VIFoundationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		384690A4501C2C055335507A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B675C6AA9249CA8313406FE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E5D2D6C0122ADBA9CB28B33 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIFoundationTests/Pods-VIFoundationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA5F5B87A58973331122B47 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		913CA7B971B4F144676606A5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIFoundation/Pods-VIFoundation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B55675F8DA73AEAAFACD2C1B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIFoundationTests/Pods-VIFoundationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE25A90F9CCFE52EB4FD66D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIFoundation/Pods-VIFoundation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF3221EC1CE8C31E0020501C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3221FC1CE8C31F0020501C /* VIFoundation.xcdatamodeld in Sources */,
+				AF3221F61CE8C31F0020501C /* ViewController.swift in Sources */,
+				AF3221F41CE8C31F0020501C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF3222031CE8C3200020501C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF32220C1CE8C3200020501C /* VIFoundationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF32220E1CE8C3200020501C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF3222171CE8C3200020501C /* VIFoundationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF3222091CE8C3200020501C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF3221EF1CE8C31E0020501C /* VIFoundation */;
+			targetProxy = AF3222081CE8C3200020501C /* PBXContainerItemProxy */;
+		};
+		AF3222141CE8C3200020501C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF3221EF1CE8C31E0020501C /* VIFoundation */;
+			targetProxy = AF3222131CE8C3200020501C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF3221F71CE8C31F0020501C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3221F81CE8C31F0020501C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF3221FF1CE8C31F0020501C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF3222001CE8C31F0020501C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF3222191CE8C3200020501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF32221A1CE8C3200020501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF32221C1CE8C3200020501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD0BDCA487B94E300750B4F /* Pods-VIFoundation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VIFoundation",
+				);
+				INFOPLIST_FILE = VIFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vyrox.VIFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AF32221D1CE8C3200020501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7E46F88C4600FE498F8E4C /* Pods-VIFoundation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VIFoundation",
+				);
+				INFOPLIST_FILE = VIFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vyrox.VIFoundation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AF32221F1CE8C3200020501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845A4527F7431D7AFECDE01D /* Pods-VIFoundationTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VIFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vyrox.VIFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIFoundation.app/VIFoundation";
+			};
+			name = Debug;
+		};
+		AF3222201CE8C3200020501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8416582DCE9CDE5CD5AB427A /* Pods-VIFoundationTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VIFoundationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vyrox.VIFoundationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIFoundation.app/VIFoundation";
+			};
+			name = Release;
+		};
+		AF3222221CE8C3200020501C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4861BBFFC098DF25887718 /* Pods-VIFoundationUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VIFoundationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vyrox.VIFoundationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VIFoundation;
+			};
+			name = Debug;
+		};
+		AF3222231CE8C3200020501C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1D1C0A0A398D06844D4655 /* Pods-VIFoundationUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = VIFoundationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vyrox.VIFoundationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VIFoundation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF3221EB1CE8C31E0020501C /* Build configuration list for PBXProject "VIFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3222191CE8C3200020501C /* Debug */,
+				AF32221A1CE8C3200020501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF32221B1CE8C3200020501C /* Build configuration list for PBXNativeTarget "VIFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF32221C1CE8C3200020501C /* Debug */,
+				AF32221D1CE8C3200020501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF32221E1CE8C3200020501C /* Build configuration list for PBXNativeTarget "VIFoundationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF32221F1CE8C3200020501C /* Debug */,
+				AF3222201CE8C3200020501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF3222211CE8C3200020501C /* Build configuration list for PBXNativeTarget "VIFoundationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3222221CE8C3200020501C /* Debug */,
+				AF3222231CE8C3200020501C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF3221FA1CE8C31F0020501C /* VIFoundation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF3221FB1CE8C31F0020501C /* VIFoundation.xcdatamodel */,
+			);
+			currentVersion = AF3221FB1CE8C31F0020501C /* VIFoundation.xcdatamodel */;
+			path = VIFoundation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF3221E81CE8C31E0020501C /* Project object */;
+}
